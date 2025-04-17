@@ -42,10 +42,6 @@ github.com
 expired.badssl.com
 ```
 
-```bash
-lts-scan --input hosts.txt --output results.csv
-```
-
 Then run the tool:
 
 ```bash

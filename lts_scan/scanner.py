@@ -247,7 +247,3 @@ def main():
         delay=args.delay
     )
     asyncio.run(scanner.run())
-
-
-if __name__ == "__main__":
-    main()
