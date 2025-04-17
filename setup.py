@@ -13,7 +13,7 @@ setup(
         ],
     },
     author='Alexandre Meline',
-    author_email='tonemail@example.com',
+    author_email='alexandre.meline.dev@gmail.com',
     description='Lightweight TLS Scanner using SSL Labs API',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
