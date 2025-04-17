@@ -24,11 +24,11 @@ You can install `lts-scan` from [PyPI](https://pypi.org/project/lts-scan/) using
 pip install lts-scan
 ```
 
-We recommend using [Poetry](https://python-poetry.org/) for managing dependencies and environments.
+Or from source we recommend using [Poetry](https://python-poetry.org/) for managing dependencies and environments.
 
 ```bash
 git clone https://github.com/alexandre-meline/LTS_scan.git
-cd lts-scan
+cd LTS_scan
 poetry install
 ```
 
