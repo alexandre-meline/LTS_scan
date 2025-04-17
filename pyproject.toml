@@ -5,7 +5,7 @@ description = "Lightweight TLS Scanner using SSL Labs API"
 authors = ["Alexandre Meline <alexandre.meline.dev@gmail.com>"]
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/alexandre-meline/LTS_scan"
+repository = "https://github.com/alexandre-meline/lts-scan"
 keywords = ["tls", "ssl", "scanner", "ssllabs", "security"]
 classifiers = [
     "Programming Language :: Python :: 3",

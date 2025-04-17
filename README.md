@@ -27,8 +27,8 @@ pip install lts-scan
 Or from source we recommend using [Poetry](https://python-poetry.org/) for managing dependencies and environments.
 
 ```bash
-git clone https://github.com/alexandre-meline/LTS_scan.git
-cd LTS_scan
+git clone https://github.com/alexandre-meline/lts-scan.git
+cd lts-scan
 poetry install
 ```
 
