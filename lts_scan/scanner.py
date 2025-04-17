@@ -240,6 +240,7 @@ def parse_args():
 
 
 def main():
+    print_banner()
     args = parse_args()
     scanner = SSLScanner(
         hosts_file=args.input,
