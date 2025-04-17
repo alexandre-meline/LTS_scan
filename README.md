@@ -1,6 +1,6 @@
 # LTS scan
 
-**LTS scan** is a command-line tool written in Python that leverages the [Qualys SSL Labs API](https://api.ssllabs.com) to scan and evaluate SSL/TLS configurations of websites.  
+**lts-scan** is a command-line tool written in Python that leverages the [Qualys SSL Labs API](https://api.ssllabs.com) to scan and evaluate SSL/TLS configurations of websites.  
 It supports multiple hosts, retry logic, and output in CSV or JSON formats.
 
 ---
