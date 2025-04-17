@@ -18,6 +18,12 @@ It supports multiple hosts, retry logic, and output in CSV or JSON formats.
 
 ## 🚀 Installation
 
+You can install `lts-scan` from [PyPI](https://pypi.org/project/lts-scan/) using pip:
+
+```bash
+pip install lts-scan
+```
+
 We recommend using [Poetry](https://python-poetry.org/) for managing dependencies and environments.
 
 ```bash
@@ -102,3 +108,7 @@ This project is licensed under the MIT License.
 
 - Parallel host scanning
 - Export to HTML or PDF
+
+## 🤝 Contributions
+
+Pull requests and suggestions are welcome! Please open an issue or submit a PR to help improve the tool.
