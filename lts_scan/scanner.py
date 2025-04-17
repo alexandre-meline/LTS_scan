@@ -158,7 +158,6 @@ class SSLScanner:
 
     def append_to_json(self, data):
         try:
-            # Lire le contenu existant
             existing = []
             if os.path.exists(self.output_file):
                 with open(self.output_file, 'r', encoding='utf-8') as f:
@@ -167,14 +166,12 @@ class SSLScanner:
                     except json.JSONDecodeError:
                         pass
 
-            # Ajouter les nouvelles données
             existing.extend(data)
 
-            # Réécrire le fichier complet
             with open(self.output_file, 'w', encoding='utf-8') as f:
                 json.dump(existing, f, indent=2)
         except Exception as e:
-            logging.exception(f"Erreur lors de l'écriture JSON : {e}")
+            logging.exception(f"Error writing JSON: {e}")
 
     async def process_hosts(self):
         async with aiohttp.ClientSession() as session:
@@ -197,7 +194,7 @@ class SSLScanner:
                 hosts = f.read().splitlines()
                 logging.info(f'Found {len(hosts)} hosts to scan')
                 if not hosts:
-                    logging.error('No hosts found in hosts.txt')
+                    logging.error('No hosts found in hosts file')
                     sys.exit(1)
                 return hosts
         except FileNotFoundError:

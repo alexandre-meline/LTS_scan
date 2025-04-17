@@ -9,6 +9,9 @@ readme = "README.md"
 python = "^3.10"
 aiohttp = "^3.11.16"
 
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
 
 [build-system]
 requires = ["poetry-core", "setuptools", "wheel"]
