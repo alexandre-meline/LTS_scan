@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -27,13 +29,11 @@ jobs:
         run: |
           poetry install
 
-      - name: Build package
-        run: |
-          poetry self add poetry-dynamic-versioning
-          poetry build
+      - name: Clean dist folder
+        run: rm -rf dist/
 
       - name: Publish to PyPI
         env:
           POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_API_TOKEN }}
         run: |
-          poetry publish --build
+          poetry publish --build --no-interaction
