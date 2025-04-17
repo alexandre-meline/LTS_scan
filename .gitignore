@@ -18,6 +18,7 @@ Thumbs.db
 hosts.txt
 results.csv
 results.json
+personnal_workflow.md
 *.log
 
 htmlcov/
