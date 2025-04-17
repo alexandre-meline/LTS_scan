@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "lts-scan"
+version = "0.1.0"
+description = ""
+authors = ["Alexandre Meline. <alexandre.meline.dev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.11.16"
+
+
+[build-system]
+requires = ["poetry-core", "setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
